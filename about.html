@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>University web design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="eduford_img/logo.png" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="bx bx-x" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">COURSES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="bx bx-menu" onclick="showmenu()"></i>
+      </nav>
+      <h1>ABOUT US</h1>
+    </section>
+
+    <!-- ----about us content ----  -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the world's largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in
+            maxime quasi iste, id nam explicabo veritatis illum odit laboriosam
+            unde quos vel perspiciatis expedita culpa soluta autem a. Iste,
+            tenetur culpa esse consequatur officiis vero quam voluptate commodi
+            voluptatum.tenetur culpa esse consequatur officiis vero quam
+            voluptate commodi voluptatum.tenetur culpa esse consequatur officiis
+            vero quam voluptate commodi voluptatum.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="eduford_img/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ----foother ---- -->
+
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+        facere molestias, mollitia voluptatum consequatur, quia hic architecto
+        <br />
+        vitae dicta, praesentium molestiae explicabo illo velit magnam assumenda
+        eum sed consectetur est.
+      </p>
+      <div class="icons">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-linkedin-square"></i>
+        <i class="bx bxl-linkedin-square"></i>
+      </div>
+      <p>Made with <i class="bx bx-heart"></i> by Aakhya</p>
+    </section>
+
+    <!-- ----javascript for toggle menu---- -->
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
